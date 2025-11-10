@@ -16,10 +16,15 @@
     --sds-color-border-danger-secondary: #C00F0C;
     --sds-color-background-danger-default: #EC221F;
     --sds-color-text-danger-on-danger: #FEE9E7;
+
+    --sds-color-border-default-default: #D9D9D9;
+    --sds-color-background-default-default: #FFFFFF;
 }
 
 body {
     font-family: Inter, serif;
+    display: flex;
+    justify-content: center;
 }
 
 .notification {
@@ -66,7 +71,30 @@ body {
 }
 
 .menu {
+    display: flex;
+    width: 366px;
+    height: 382px;
+    padding: var(--sds-size-space-200);
+    flex-direction: column;
+    align-items: flex-start;
 
+    border-radius: var(--sds-size-radius-200);
+    border: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default);
+    background: var(--sds-color-background-default-default);
+
+    box-shadow: 0 4px 4px -1px #0C0C0D;
+}
+
+.menu .menu-card {
+    display: flex;
+    width: 285px;
+    padding: var(--sds-size-space-300) var(--sds-size-space-400);
+    align-items: flex-start;
+    gap: var(--sds-size-space-300);
+}
+
+.menu #title {
+    padding: var(--sds-size-space-300) var(--sds-size-space-400);
 }
 
 .heft-selection {
