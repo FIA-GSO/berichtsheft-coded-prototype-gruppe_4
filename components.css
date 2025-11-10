@@ -1,0 +1,65 @@
+:root {
+    --sds-size-space-400: 16px;
+    --sds-size-space-300: 8px;
+    --sds-size-radius-200: 8px;
+    --sds-size-stroke-border: 1px;
+    --sds-color-border-danger-tertiary: #EC221F;
+    --sds-color-background-danger-tertiary: #FEE9E7;
+
+    --sds-color-text-danger-on-danger-tertiary: #900B09;
+    --sds-typography-body-font-family: Inter;
+    --sds-typography-body-size-medium: 16px;
+    --sds-typography-body-font-weight-strong: 600;
+    --sds-typography-body-font-weight-regular: 400;
+}
+
+body {
+    font-family: Inter, serif;
+}
+
+.notification {
+    display: flex;
+    width: 358px;
+    padding: var(--sds-size-space-400);
+    align-items: center;
+    gap: var(--sds-size-space-300);
+    border-radius: var(--sds-size-radius-200);
+    border: var(--sds-size-stroke-border) solid var(--sds-color-border-danger-tertiary);
+    opacity: 0.7;
+    background: var(--sds-color-background-danger-tertiary);
+}
+
+.notification p {
+    color: var(--sds-color-text-danger-on-danger-tertiary);
+    font-family: var(--sds-typography-body-font-family), serif;
+    font-size: var(--sds-typography-body-size-medium);
+    font-style: normal;
+    font-weight: var(--sds-typography-body-font-weight-regular);
+    line-height: 140%;
+}
+
+.notification .strong {
+    font-weight: var(--sds-typography-body-font-weight-strong);
+}
+
+.notification img{
+    padding-right: 10px;
+}
+
+
+
+.menu {
+
+}
+
+.heft-selection {
+
+}
+
+.heft {
+
+}
+
+.profile {
+
+}
