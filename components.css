@@ -11,6 +11,11 @@
     --sds-typography-body-size-medium: 16px;
     --sds-typography-body-font-weight-strong: 600;
     --sds-typography-body-font-weight-regular: 400;
+
+    --sds-size-space-200: 8px;
+    --sds-color-border-danger-secondary: #C00F0C;
+    --sds-color-background-danger-default: #EC221F;
+    --sds-color-text-danger-on-danger: #FEE9E7;
 }
 
 body {
@@ -46,7 +51,19 @@ body {
     padding-right: 10px;
 }
 
+.notification button {
+    display: flex;
+    padding: var(--sds-size-space-200);
+    justify-content: center;
+    align-items: center;
+    gap: var(--sds-size-space-200);
 
+    border-radius: var(--sds-size-radius-200);
+    border: var(--sds-size-stroke-border) solid var(--sds-color-border-danger-secondary);
+    background: var(--sds-color-background-danger-default);
+
+    color: var(--sds-color-text-danger-on-danger)
+}
 
 .menu {
 
